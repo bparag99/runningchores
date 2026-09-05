@@ -1,0 +1,62 @@
+[
+  {
+    "id": "notif_001",
+    "organization_id": "org_001",
+    "user_id": "user_planner",
+    "type": "approval_request",
+    "title": "Catering menu approval requested",
+    "body": "Coordinator has requested approval for catering menu",
+    "related_entity_type": "approval",
+    "related_entity_id": "appr_001",
+    "is_read": false,
+    "created_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "id": "notif_002",
+    "organization_id": "org_001",
+    "user_id": "user_coordinator",
+    "type": "vendor_confirmed",
+    "title": "Vendor confirmed - Sharma Decorators",
+    "body": "Sharma Decorators has confirmed the decoration assignment",
+    "related_entity_type": "vendor",
+    "related_entity_id": "vendor_001",
+    "is_read": true,
+    "created_at": "2024-05-16T10:30:00Z"
+  },
+  {
+    "id": "notif_003",
+    "organization_id": "org_001",
+    "user_id": "user_coordinator",
+    "type": "risk_alert",
+    "title": "DJ confirmation overdue",
+    "body": "DJ vendor has not confirmed in 3 days. Event is in 2 days.",
+    "related_entity_type": "vendor",
+    "related_entity_id": "vendor_003",
+    "is_read": false,
+    "created_at": "2024-05-20T08:00:00Z"
+  },
+  {
+    "id": "notif_004",
+    "organization_id": "org_001",
+    "user_id": "user_admin",
+    "type": "budget_alert",
+    "title": "Budget increase request pending",
+    "body": "Additional budget of ₹50,000 requested for decoration",
+    "related_entity_type": "approval",
+    "related_entity_id": "appr_003",
+    "is_read": false,
+    "created_at": "2024-05-19T10:00:00Z"
+  },
+  {
+    "id": "notif_005",
+    "organization_id": "org_001",
+    "user_id": "user_couple",
+    "type": "task_completed",
+    "title": "Guest List finalized",
+    "body": "Your guest list has been finalized. Please verify the RSVPs.",
+    "related_entity_type": "task",
+    "related_entity_id": "task_006",
+    "is_read": false,
+    "created_at": "2024-05-14T10:00:00Z"
+  }
+]

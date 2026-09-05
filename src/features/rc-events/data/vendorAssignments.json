@@ -1,0 +1,61 @@
+[
+  {
+    "id": "asgn_001",
+    "event_id": "evt_001",
+    "vendor_id": "vendor_001",
+    "task_id": "task_002",
+    "organization_id": "org_001",
+    "assignment_scope": "Full decoration for Mehndi",
+    "status": "confirmed",
+    "confirmed_at": "2024-05-16T10:30:00Z",
+    "start_date": "2024-05-24",
+    "end_date": "2024-05-25"
+  },
+  {
+    "id": "asgn_002",
+    "event_id": "evt_001",
+    "vendor_id": "vendor_002",
+    "task_id": "task_003",
+    "organization_id": "org_001",
+    "assignment_scope": "Catering for Mehndi (250 guests)",
+    "status": "confirmed",
+    "confirmed_at": "2024-05-15T11:00:00Z",
+    "start_date": "2024-05-25",
+    "end_date": "2024-05-25"
+  },
+  {
+    "id": "asgn_003",
+    "event_id": "evt_001",
+    "vendor_id": "vendor_003",
+    "task_id": "task_004",
+    "organization_id": "org_001",
+    "assignment_scope": "DJ and Music for Mehndi",
+    "status": "assigned",
+    "start_date": "2024-05-25",
+    "end_date": "2024-05-25"
+  },
+  {
+    "id": "asgn_004",
+    "event_id": "evt_001",
+    "vendor_id": "vendor_004",
+    "task_id": "task_005",
+    "organization_id": "org_001",
+    "assignment_scope": "Photography and Videography",
+    "status": "confirmed",
+    "confirmed_at": "2024-05-17T09:00:00Z",
+    "start_date": "2024-05-25",
+    "end_date": "2024-05-25"
+  },
+  {
+    "id": "asgn_005",
+    "event_id": "evt_001",
+    "vendor_id": "vendor_005",
+    "task_id": "task_008",
+    "organization_id": "org_001",
+    "assignment_scope": "Makeup for Bride and Groom",
+    "status": "confirmed",
+    "confirmed_at": "2024-05-16T14:30:00Z",
+    "start_date": "2024-05-25",
+    "end_date": "2024-05-25"
+  }
+]

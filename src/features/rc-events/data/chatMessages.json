@@ -1,0 +1,32 @@
+[
+  {
+    "id": "msg_001",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "user_id": "user_coordinator",
+    "message_text": "How is the Mehndi preparation going?",
+    "ai_response": "The Mehndi event is 72% ready. \n\n✅ Completed: 7/10 tasks\n⏳ Pending: 3 approvals (Catering Menu, Budget Increase)\n👥 Vendors: 5 assigned, 4 confirmed\n\nBlockers:\n• Catering menu approval pending\n• DJ confirmation awaited (3 days overdue)\n\nRecommendations:\n1. Approve catering menu immediately\n2. Contact DJ urgently (event in 2 days)\n3. Approve budget increase for additional decorations",
+    "intent": "readiness",
+    "created_at": "2024-05-20T10:00:00Z"
+  },
+  {
+    "id": "msg_002",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "user_id": "user_coordinator",
+    "message_text": "Which vendors are delayed?",
+    "ai_response": "Vendor Status for Mehndi:\n\n✅ Confirmed (4):\n• Sharma Decorators (Confirmed May 16)\n• ABC Caterers (Confirmed May 15)\n• Smile Photography (Confirmed May 17)\n• Glam Makeup (Confirmed May 16)\n\n⏳ Pending (1):\n• XYZ DJ Services (Assigned May 10) - ❌ OVERDUE 3 days\n\nAction Needed: Contact DJ immediately, event is in 2 days",
+    "intent": "vendors",
+    "created_at": "2024-05-20T10:05:00Z"
+  },
+  {
+    "id": "msg_003",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "user_id": "user_planner",
+    "message_text": "What approvals are still pending?",
+    "ai_response": "Pending Approvals for Mehndi (3):\n\n1. 🍽 Catering Menu Approval\n   Requested by: Coordinator (May 18)\n   Due: May 20 ⚠ DUE TODAY\n   Status: Pending your approval\n   \n2. 💰 Budget Increase Request\n   Requested by: Coordinator (May 19)\n   Amount: ₹50,000 (for additional decorations)\n   Due: May 25\n   \n3. 👨 DJ Vendor Confirmation\n   Requested by: Coordinator (May 10)\n   Due: May 18 ❌ OVERDUE 2 days\n\nImmediate Action: Approve catering menu today",
+    "intent": "approvals",
+    "created_at": "2024-05-20T10:10:00Z"
+  }
+]

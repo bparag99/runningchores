@@ -1,0 +1,72 @@
+[
+  {
+    "id": "vendor_001",
+    "organization_id": "org_001",
+    "name": "Sharma Decorators",
+    "category": "decorator",
+    "phone": "+919234567890",
+    "email": "sharma@decorators.com",
+    "city": "New Delhi",
+    "description": "Premium wedding decoration services with 15+ years experience",
+    "average_rating": 4.8,
+    "total_reviews": 24,
+    "is_verified": true,
+    "is_active": true
+  },
+  {
+    "id": "vendor_002",
+    "organization_id": "org_001",
+    "name": "ABC Caterers",
+    "category": "caterer",
+    "phone": "+919345678901",
+    "email": "contact@abccaterers.com",
+    "city": "New Delhi",
+    "description": "Multi-cuisine catering with customized menus",
+    "average_rating": 4.5,
+    "total_reviews": 18,
+    "is_verified": true,
+    "is_active": true
+  },
+  {
+    "id": "vendor_003",
+    "organization_id": "org_001",
+    "name": "XYZ DJ Services",
+    "category": "dj",
+    "phone": "+919456789012",
+    "email": "contact@xyzdjservices.com",
+    "city": "New Delhi",
+    "description": "Professional DJs for weddings and events",
+    "average_rating": 4.2,
+    "total_reviews": 12,
+    "is_verified": true,
+    "is_active": true
+  },
+  {
+    "id": "vendor_004",
+    "organization_id": "org_001",
+    "name": "Smile Photography Studio",
+    "category": "photographer",
+    "phone": "+919567890123",
+    "email": "bookings@smilephotography.com",
+    "city": "New Delhi",
+    "description": "Professional photography and videography services",
+    "average_rating": 4.9,
+    "total_reviews": 32,
+    "is_verified": true,
+    "is_active": true
+  },
+  {
+    "id": "vendor_005",
+    "organization_id": "org_001",
+    "name": "Glam Makeup Artistry",
+    "category": "makeup",
+    "phone": "+919678901234",
+    "email": "bookings@glammakeup.com",
+    "city": "New Delhi",
+    "description": "Professional bridal and event makeup services",
+    "average_rating": 4.7,
+    "total_reviews": 15,
+    "is_verified": true,
+    "is_active": true
+  }
+]

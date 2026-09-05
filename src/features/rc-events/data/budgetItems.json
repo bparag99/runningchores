@@ -1,0 +1,65 @@
+[
+  {
+    "id": "budget_001",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "category": "venue",
+    "vendor_id": null,
+    "description": "Taj Palace Hotel - Venue Booking",
+    "allocated_amount": 100000,
+    "estimated_amount": 95000,
+    "spent_amount": 95000,
+    "status": "paid",
+    "payment_date": "2024-05-10"
+  },
+  {
+    "id": "budget_002",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "category": "catering",
+    "vendor_id": "vendor_002",
+    "description": "ABC Caterers - Mehndi Catering",
+    "allocated_amount": 150000,
+    "estimated_amount": 130000,
+    "spent_amount": 130000,
+    "status": "paid",
+    "payment_date": "2024-05-15"
+  },
+  {
+    "id": "budget_003",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "category": "decor",
+    "vendor_id": "vendor_001",
+    "description": "Sharma Decorators - Full Decoration",
+    "allocated_amount": 100000,
+    "estimated_amount": 85000,
+    "spent_amount": 85000,
+    "status": "paid",
+    "payment_date": "2024-05-20"
+  },
+  {
+    "id": "budget_004",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "category": "music",
+    "vendor_id": "vendor_003",
+    "description": "XYZ DJ Services - DJ and Sound",
+    "allocated_amount": 75000,
+    "estimated_amount": 25000,
+    "spent_amount": 0,
+    "status": "quoted"
+  },
+  {
+    "id": "budget_005",
+    "event_id": "evt_001",
+    "organization_id": "org_001",
+    "category": "photography",
+    "vendor_id": "vendor_004",
+    "description": "Smile Photography - Photography & Videography",
+    "allocated_amount": 75000,
+    "estimated_amount": 25000,
+    "spent_amount": 0,
+    "status": "quoted"
+  }
+]
