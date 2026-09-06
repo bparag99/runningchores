@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import AjantaTyresApp from './features/ajanta-tyres/App'
 import RcEventsApp from './features/rc-events/app/App'
+import ArihantAssociatesApp from './features/arihant-associates/App'
 
-type RouteId = 'home' | 'ajanta-tyres' | 'rc-events'
+type RouteId = 'home' | 'ajanta-tyres' | 'rc-events' | 'arihant-associates'
 
 type Route = {
     id: RouteId
@@ -13,6 +14,13 @@ type Route = {
 }
 
 const routes: Route[] = [
+    {
+        id: 'arihant-associates',
+        path: '/arihant-associates',
+        title: 'Arihant Associates',
+        description: 'Certified property valuation and report preparation workspace.',
+        render: () => <ArihantAssociatesApp />,
+    },
 
     {
         id: 'rc-events',
