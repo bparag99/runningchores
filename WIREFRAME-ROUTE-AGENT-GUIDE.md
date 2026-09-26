@@ -11,7 +11,7 @@ The target architecture is one web application:
 - One preview server.
 - One deployment artifact.
 - One homepage at `/` that lists every registered wireframe route.
-- One isolated feature folder per wireframe under `src/features/`.
+- One isolated feature folder per wireframe under `src/portfolio/`.
 
 Do not create a second Vite app, HTML entrypoint, React root, deployment target, or child-project server inside `runningchores`.
 
@@ -44,7 +44,7 @@ Feature entrypoint: FleetDeskApp
 - [ ] Work from the `runningchores` repository root.
 - [ ] Preserve the existing `/` homepage and its professional RunningChores branding.
 - [ ] Add the new route to the existing root route registry.
-- [ ] Keep all feature-specific code under `src/features/<feature-folder>/`.
+- [ ] Keep all feature-specific code under `src/portfolio/<feature-folder>/`.
 - [ ] Use the existing React/Vite/Tailwind dependency versions unless a required package is missing.
 - [ ] Add missing packages to the root `package.json`, never to a nested feature `package.json`.
 - [ ] Use the root lockfile and root install command.
@@ -60,7 +60,7 @@ Feature entrypoint: FleetDeskApp
 - [ ] Read `src/App.tsx` before making changes.
 - [ ] Confirm the current `RouteId` type and `Route` type.
 - [ ] Confirm the existing `routes` array and its `render` function pattern.
-- [ ] Inspect `src/features/ajanta-tyres/` and `src/features/rc-events/` for local conventions.
+- [ ] Inspect `src/portfolio/ajanta-tyres/` and `src/portfolio/rc-events/` for local conventions.
 - [ ] Inspect the source project for its actual production entrypoint, assets, data, styles, and dependencies.
 - [ ] Identify duplicate documentation/demo projects and exclude them from production source unless explicitly requested.
 - [ ] Search for `createRoot`, `index.html`, `vite.config`, absolute `/src/` imports, and custom asset schemes.
@@ -72,21 +72,21 @@ Feature entrypoint: FleetDeskApp
 Create the feature directory:
 
 ```text
-src/features/<feature-folder>/
+src/portfolio/<feature-folder>/
 ```
 
 Move or copy only production source into it. A typical structure is:
 
 ```text
-src/features/<feature-folder>/
-├── App.tsx                 # Feature-level React entry component
-├── components/             # Feature components
-├── context/                # Feature providers, if needed
-├── data/                   # Mock data or feature fixtures
-├── pages/                  # Feature pages or screens
-├── styles/                 # Feature stylesheet files, if needed
-├── types/                  # Feature types
-└── assets/                 # Feature assets
+src/portfolio/<feature-folder>/
+â”œâ”€â”€ App.tsx                 # Feature-level React entry component
+â”œâ”€â”€ components/             # Feature components
+â”œâ”€â”€ context/                # Feature providers, if needed
+â”œâ”€â”€ data/                   # Mock data or feature fixtures
+â”œâ”€â”€ pages/                  # Feature pages or screens
+â”œâ”€â”€ styles/                 # Feature stylesheet files, if needed
+â”œâ”€â”€ types/                  # Feature types
+â””â”€â”€ assets/                 # Feature assets
 ```
 
 Adapt the source entrypoint so it exports a component instead of mounting React:
@@ -245,8 +245,8 @@ Use this format when the work is complete:
 
 ```text
 Implemented route: /<RoutePath>
-Feature folder: src/features/<feature-folder>/
-Feature entrypoint: src/features/<feature-folder>/App.tsx
+Feature folder: src/portfolio/<feature-folder>/
+Feature entrypoint: src/portfolio/<feature-folder>/App.tsx
 
 Changed:
 - Added the isolated feature source.

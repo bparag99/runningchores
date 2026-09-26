@@ -1,0 +1,15 @@
+& "C:\Users\bpara\AppData\Local\Programs\DockerDesktop\resources\bin\docker.exe" version
+& "C:\Users\bpara\AppData\Local\Programs\DockerDesktop\resources\bin\docker.exe" compose version
+
+Client:
+ Version:           29.8.0
+ API version:       1.56
+ Go version:        go1.26.8
+ Git commit:        88096ef
+ Built:             Thu Sep  3 21:53:38 2026
+ OS/Arch:           windows/amd64
+ Context:           default
+request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.56/version, check if the server supports the requested API version
+docker: unknown command: docker compose
+
+Run 'docker --help' for more information

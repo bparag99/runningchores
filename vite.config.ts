@@ -14,9 +14,12 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    // Allow local tunnels (for example ngrok) to reach the dev server.
+    allowedHosts: ['.ngrok-free.dev', '.ngrok.app', '.ngrok-free.app', '.ngrok.io'],
   },
   preview: {
     host: '0.0.0.0',
     port: 4173,
+    allowedHosts: ['.ngrok-free.dev', '.ngrok.app', '.ngrok-free.app', '.ngrok.io'],
   },
 })

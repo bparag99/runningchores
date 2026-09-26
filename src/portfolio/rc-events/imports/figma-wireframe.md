@@ -10,7 +10,7 @@ The RunningChores route is:
 /rc-events
 ```
 
-This feature is isolated under `src/features/rc-events/` and is mounted by the shared RunningChores route registry. It must not create its own Vite app, HTML entrypoint, React root, or deployment target.
+This feature is isolated under `src/portfolio/rc-events/` and is mounted by the shared RunningChores route registry. It must not create its own Vite app, HTML entrypoint, React root, or deployment target.
 
 ---
 
@@ -491,7 +491,7 @@ Mobile:
 ## 8. RunningChores Integration Contract
 
 - Feature route: `/rc-events`.
-- Feature entry: `src/features/rc-events/app/App.tsx`.
+- Feature entry: `src/portfolio/rc-events/app/App.tsx`.
 - Root registry: `src/App.tsx`.
 - One root `index.html`.
 - One root `src/main.tsx`.

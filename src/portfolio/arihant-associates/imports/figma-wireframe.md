@@ -16,17 +16,17 @@ The implementation follows the source Flutter flow documented in:
 bs-arihant-associates-flutter/README.md
 ```
 
-The React feature is isolated under `src/features/arihant-associates/` and follows the RC Events organization pattern:
+The React feature is isolated under `src/portfolio/arihant-associates/` and follows the RC Events organization pattern:
 
 ```text
-src/features/arihant-associates/
-├── app/
-├── components/
-├── context/
-├── data/
-├── pages/
-├── styles/
-└── types/
+src/portfolio/arihant-associates/
+â”œâ”€â”€ app/
+â”œâ”€â”€ components/
+â”œâ”€â”€ context/
+â”œâ”€â”€ data/
+â”œâ”€â”€ pages/
+â”œâ”€â”€ styles/
+â””â”€â”€ types/
 ```
 
 ---
@@ -370,8 +370,8 @@ Mobile:
 ## 9. RunningChores Integration Contract
 
 - Feature route: `/arihant-associates`.
-- Feature entry: `src/features/arihant-associates/App.tsx`.
-- Feature implementation: `src/features/arihant-associates/app/App.tsx`.
+- Feature entry: `src/portfolio/arihant-associates/App.tsx`.
+- Feature implementation: `src/portfolio/arihant-associates/app/App.tsx`.
 - Root route registration: `src/App.tsx`.
 - One root `index.html`.
 - One root `src/main.tsx`.
