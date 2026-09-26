@@ -1,5 +1,6 @@
+import SiteFooter from '../SiteFooter'
 import { navigate, projectRoutes } from '../router'
-import { ArrowRightIcon, MeetIcon } from '../homepage/icons'
+import { ArrowRightIcon } from '../homepage/icons'
 
 export default function PortfolioPage() {
     return (
@@ -36,14 +37,6 @@ export default function PortfolioPage() {
                             className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-slate-500 hover:bg-slate-800/80"
                         >
                             Home
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => navigate('/meet')}
-                            className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-700 bg-slate-900/60 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-slate-500 hover:bg-slate-800/80"
-                        >
-                            <MeetIcon className="h-4 w-4" />
-                            Meet
                         </button>
                     </nav>
                 </header>
@@ -82,9 +75,7 @@ export default function PortfolioPage() {
                     ))}
                 </section>
 
-                <footer className="mt-auto border-t border-slate-800 pt-8 pb-2 text-sm text-slate-500">
-                    <p>RunningChores · Mentor. Consult. Build.</p>
-                </footer>
+                <SiteFooter />
             </div>
         </main>
     )

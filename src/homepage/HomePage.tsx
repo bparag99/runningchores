@@ -1,14 +1,22 @@
+import SiteFooter from '../SiteFooter'
 import { navigate } from '../router'
 import {
     ArrowRightIcon,
-    ContactIcon,
+    ContactUsIcon,
     GlobeIcon,
     LinkedInIcon,
-    MeetIcon,
+    MentorIcon,
     PortfolioIcon,
     SparkIcon,
 } from './icons'
-import { HASHTAGS, LINKEDIN_COMPANY_URL, PILLARS, SOCIAL_LINKS, UPCOMING } from './site'
+import {
+    CONTACT_FORM_URL,
+    HASHTAGS,
+    LINKEDIN_COMPANY_URL,
+    MENTOR_FORM_URL,
+    PILLARS,
+    UPCOMING,
+} from './site'
 
 const buttonBase =
     'inline-flex items-center justify-center gap-2.5 rounded-xl px-5 py-3 text-sm font-bold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950'
@@ -174,10 +182,14 @@ export default function HomePage() {
                     </p>
 
                     <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-                        <button type="button" onClick={() => navigate('/meet')} className={ghostButton}>
-                            <MeetIcon className="h-4 w-4" />
-                            Start a meeting
-                        </button>
+                        <a href={CONTACT_FORM_URL} target="_blank" rel="noreferrer" className={ghostButton}>
+                            <ContactUsIcon className="h-4 w-4" />
+                            Contact Us
+                        </a>
+                        <a href={MENTOR_FORM_URL} target="_blank" rel="noreferrer" className={ghostButton}>
+                            <MentorIcon className="h-4 w-4" />
+                            Become a Mentor
+                        </a>
                     </div>
 
                     <ul className="mt-8 flex flex-wrap items-center justify-center gap-2">
@@ -193,30 +205,8 @@ export default function HomePage() {
                     <br></br>
                 </section>
                 {/* Footer */}
-                <footer className="mt-auto border-t border-slate-800 pt-2 pb-2">
-                    <div className="flex flex-col gap-4 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-                        <nav aria-label="Contact links" className="flex flex-wrap gap-x-5 gap-y-2 sm:justify-start">
-                            {SOCIAL_LINKS.map(link => (
-                                <a
-                                    key={link.label}
-                                    href={link.href}
-                                    target={link.type === 'email' ? undefined : '_blank'}
-                                    rel="noreferrer"
-                                    className="inline-flex items-center gap-2 transition hover:text-cyan-300"
-                                >
-                                    <ContactIcon type={link.type} />
-                                    {link.label}
-                                </a>
-                            ))}
-                        </nav>
-                        <div>
-                            <p>Amita Enterprise Pvt. Ltd.</p>
-                            <p className="mt-1 text-xs text-slate-500">A platform managed by Parag Bajaj</p>
-                        </div>
-                    </div>
-
-                </footer>
+                <SiteFooter />
             </div>
-        </main>
+            </main>
     )
 }

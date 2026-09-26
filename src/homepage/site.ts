@@ -3,6 +3,12 @@ export const LINKEDIN_POST_URL =
 
 export const LINKEDIN_COMPANY_URL = 'https://www.linkedin.com/company/running-chores/'
 
+export const CONTACT_FORM_URL =
+    'https://docs.google.com/forms/d/e/1FAIpQLScswKCHqEvzwhAKxV4X5GadwjOFwIb7Un1NgxyN06Ds9HDngw/viewform?usp=publish-editor'
+
+export const MENTOR_FORM_URL =
+    'https://docs.google.com/forms/d/e/1FAIpQLSd-pbQIoSXC0H_JS57YYLEIe5ECOxiqgbKpkwXKG1t4f6G4Aw/viewform?usp=publish-editor'
+
 export const SITE_URL = 'https://www.runningchores.com'
 
 export const SOCIAL_LINKS = [
