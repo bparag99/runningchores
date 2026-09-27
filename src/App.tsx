@@ -32,9 +32,9 @@ export default function App() {
         document.title =
             route?.title ??
             (routeId === 'home'
-                ? 'RunningChores'
+                ? 'Running Chores'
                 : routeId === 'portfolio'
-                    ? 'Portfolio · RunningChores'
+                    ? 'Portfolio · Running Chores'
                     : 'Route not found')
     }, [routeId])
 

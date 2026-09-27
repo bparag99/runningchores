@@ -12,7 +12,6 @@ export const MENTOR_FORM_URL =
 export const SITE_URL = 'https://www.runningchores.com'
 
 export const SOCIAL_LINKS = [
-    { label: 'GitHub', href: 'https://github.com/bparag99', type: 'github' },
     { label: 'Instagram', href: 'https://www.instagram.com/_mr_bajaj_/', type: 'instagram' },
     { label: 'WhatsApp', href: 'https://wa.me/917869730151', type: 'whatsapp' },
     { label: 'Gmail', href: 'mailto:bparag99@gmail.com', type: 'email' },
