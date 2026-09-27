@@ -12,10 +12,9 @@ export const MENTOR_FORM_URL =
 export const SITE_URL = 'https://www.runningchores.com'
 
 export const SOCIAL_LINKS = [
-    { label: 'Instagram', href: 'https://www.instagram.com/_mr_bajaj_/', type: 'instagram' },
     { label: 'WhatsApp', href: 'https://wa.me/919039422642', type: 'whatsapp' },
     { label: 'Gmail', href: 'mailto:runningchores@gmail.com', type: 'email' },
-] as const
+] as const 
 
 export const PILLARS = [
     {
