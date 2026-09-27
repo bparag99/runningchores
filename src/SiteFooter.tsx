@@ -8,8 +8,8 @@ import { SOCIAL_LINKS } from './homepage/site'
 export default function SiteFooter() {
     return (
         <footer className="mt-auto border-t border-slate-800 pt-2 pb-2">
-            <div className="flex flex-col gap-4 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-                <nav aria-label="Contact links" className="flex flex-wrap items-center gap-5 sm:justify-start">
+            <div className="flex flex-col items-center gap-4 text-center text-sm text-slate-400 sm:flex-row sm:justify-between sm:text-left">
+                <nav aria-label="Contact links" className="flex flex-wrap items-center justify-center gap-5 sm:justify-start">
                     {SOCIAL_LINKS.map(link => (
                         <a
                             key={link.label}
@@ -24,7 +24,7 @@ export default function SiteFooter() {
                         </a>
                     ))}
                 </nav>
-                <div>
+                <div className="text-center sm:text-left">
                     <p className="mt-1 text-xs text-slate-500">
                         A platform managed by <span className="font-semibold text-cyan-300">Amita Enterprise</span>
                     </p>
