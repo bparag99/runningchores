@@ -16,6 +16,7 @@ import {
   formatMeetingCode,
   getMeetingInviteUrl,
   isValidMeetingCode,
+  MEET_ROUTE,
   normalizeMeetingCode,
 } from './meetingCode'
 import './meet.css'
@@ -27,7 +28,7 @@ function getCodeFromUrl(): string {
 }
 
 function updateAddress(code?: string) {
-  const url = new URL('/meet', window.location.origin)
+  const url = new URL(MEET_ROUTE, window.location.origin)
   if (code) url.searchParams.set('code', code)
   window.history.replaceState({}, '', url)
 }

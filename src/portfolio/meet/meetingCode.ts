@@ -32,8 +32,11 @@ export function formatMeetingCode(value: string): string {
   return value.match(/.{1,4}/g)?.join('-') ?? value
 }
 
+/** App route for this feature. Kept here so invite links never drift from the registry. */
+export const MEET_ROUTE = '/portfolio/meet'
+
 export function getMeetingInviteUrl(code: string): string {
-  const url = new URL('/meet', window.location.origin)
+  const url = new URL(MEET_ROUTE, window.location.origin)
   url.searchParams.set('code', code)
   return url.toString()
 }

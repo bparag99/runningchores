@@ -1,0 +1,37 @@
+/*
+ * Feature-scoped styles for the Employee Management portal.
+ *
+ * Deliberately minimal: the portal uses Tailwind utilities plus the global
+ * Inter font already loaded in `src/index.css`. No global element selectors are
+ * declared here so this stylesheet cannot leak into the Ajanta Tyres, RC Events
+ * or Arihant Associates routes (see DESIGN.md §16 / repo guide Phase 4).
+ */
+
+.rc-portal {
+    color-scheme: light;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep the native date/time pickers legible on a light surface. */
+.rc-portal input[type='date'],
+.rc-portal input[type='time'] {
+    min-height: 2.75rem;
+}
+
+.rc-portal input[type='date']::-webkit-calendar-picker-indicator,
+.rc-portal input[type='time']::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.55;
+}
+
+.rc-portal input[type='date']:hover::-webkit-calendar-picker-indicator,
+.rc-portal input[type='time']:hover::-webkit-calendar-picker-indicator {
+    opacity: 1;
+}
+
+/* Remove the default search clear affordance so the control matches the rest. */
+.rc-portal input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
