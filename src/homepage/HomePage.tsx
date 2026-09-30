@@ -14,6 +14,7 @@ import {
     HASHTAGS,
     LINKEDIN_COMPANY_URL,
     MENTOR_FORM_URL,
+    MENTOR_STEPS,
     PILLARS,
     UPCOMING,
 } from './site'
@@ -117,7 +118,8 @@ export default function HomePage() {
                             Three core areas, one platform
                         </h2>
                         <p className="mt-4 leading-7 text-slate-400">
-                            Every engagement is grounded in practical guidance and technology that works.
+                            Every engagement is grounded in real expertise and technology that works — from
+                            one-to-one mentoring to full enterprise delivery.
                         </p>
                     </div>
 
@@ -143,8 +145,61 @@ export default function HomePage() {
                                         </li>
                                     ))}
                                 </ul>
+                                {pillar.cta && (
+                                    <a
+                                        href={pillar.cta.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className={`${ghostButton} mt-6 w-full`}
+                                    >
+                                        <MentorIcon className="h-4 w-4" />
+                                        {pillar.cta.label}
+                                    </a>
+                                )}
                             </article>
                         ))}
+                    </div>
+                </section>
+
+                {/* Become a mentor */}
+                <section className="mt-24" aria-labelledby="mentor-heading">
+                    <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-slate-900 via-slate-900/80 to-slate-950 p-8 sm:p-12">
+                        <span
+                            aria-hidden="true"
+                            className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-400/30 bg-slate-950 text-2xl"
+                        >
+                            🎓
+                        </span>
+                        <p className="mt-6 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-300">
+                            Freelance opportunity
+                        </p>
+                        <h2 id="mentor-heading" className="mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-4xl">
+                            Got real-world skills? Become a mentor.
+                        </h2>
+                        <p className="mt-4 max-w-2xl leading-7 text-slate-400">
+                            This is not a support or help-desk for people looking for mentoring. It is the other way
+                            round: you sign up with the experience you already have, and we introduce you to someone
+                            who is looking for a mentor in your field. You choose the engagements that suit you.
+                        </p>
+
+                        <ol className="mt-10 grid gap-4 sm:grid-cols-3">
+                            {MENTOR_STEPS.map(item => (
+                                <li key={item.step} className="rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
+                                    <span className="text-xs font-semibold tracking-widest text-cyan-300">
+                                        {item.step}
+                                    </span>
+                                    <h3 className="mt-2 font-semibold text-white">{item.title}</h3>
+                                    <p className="mt-2 text-sm leading-6 text-slate-400">{item.description}</p>
+                                </li>
+                            ))}
+                        </ol>
+
+                        <div className="mt-9">
+                            <a href={MENTOR_FORM_URL} target="_blank" rel="noreferrer" className={primaryButton}>
+                                <MentorIcon className="h-4 w-4" />
+                                Become a Mentor
+                            </a>
+                        </div>
                     </div>
                 </section>
 
@@ -178,7 +233,7 @@ export default function HomePage() {
                     </h2>
                     <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-400">
                         If you&apos;re a professional looking for the right opportunity, an organisation looking for
-                        solutions, or someone looking for the right guidance — we&apos;d love to connect.
+                        solutions, or an expert who wants to mentor on a freelance basis — we&apos;d love to connect.
                     </p>
 
                     <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

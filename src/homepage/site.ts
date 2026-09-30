@@ -16,14 +16,23 @@ export const SOCIAL_LINKS = [
     { label: 'Gmail', href: 'mailto:runningchores@gmail.com', type: 'email' },
 ] as const 
 
-export const PILLARS = [
+export type Pillar = {
+    id: string
+    emoji: string
+    title: string
+    description: string
+    points: readonly string[]
+    cta?: { label: string; href: string }
+}
+
+export const PILLARS: readonly Pillar[] = [
     {
-        id: 'mentoring',
-        emoji: '🎓',
-        title: 'Mentoring',
+        id: 'enterprise',
+        emoji: '🏢',
+        title: 'Enterprise Solutions',
         description:
-            'Helping individuals learn, grow, and navigate their professional journey with the right guidance.',
-        points: ['Career direction', 'Skill building', 'Professional growth'],
+            'Helping organizations solve complex challenges through scalable, technology-driven solutions and services.',
+        points: ['Scalable systems', 'Technology delivery', 'Process engineering'],
     },
     {
         id: 'consultation',
@@ -34,14 +43,18 @@ export const PILLARS = [
         points: ['Business advisory', 'Strategy sessions', 'Decision support'],
     },
     {
-        id: 'enterprise',
-        emoji: '🏢',
-        title: 'Enterprise Solutions',
+        id: 'mentoring',
+        emoji: '🎓',
+        title: 'Become a Mentor',
         description:
-            'Helping organizations solve complex challenges through scalable, technology-driven solutions and services.',
-        points: ['Scalable systems', 'Technology delivery', 'Process engineering'],
+            'A freelance opportunity for professionals. Sign up with the skills you already have, and we will connect you with someone who is actively looking for a mentor.',
+        points: [
+            'Share your own skills',
+            'Work as a freelance mentor',
+            'Paid, flexible engagements',
+        ],
     },
-] as const
+]
 
 export const UPCOMING = [
     {
@@ -54,18 +67,42 @@ export const UPCOMING = [
     },
     {
         title: 'Projects',
-        description: 'Work in progress across mentoring, consultation, and enterprise engagements.',
+        description:
+            'Work in progress across mentor–mentee engagements, consultation, and enterprise deliveries.',
     },
     {
         title: 'Work with us',
-        description: 'Openings for collaborators who want to grow alongside the platform.',
+        description:
+            'Become a freelance mentor, or join as a collaborator who wants to grow alongside the platform.',
+    },
+] as const
+
+export const MENTOR_STEPS = [
+    {
+        step: '01',
+        title: 'Sign yourself up',
+        description:
+            'Tell us what you do and which skills you can share — the industry you know, the tools you use, the mistakes you have already made.',
+    },
+    {
+        step: '02',
+        title: 'We find the match',
+        description:
+            'Someone who is looking for a mentor in your area reaches out to you directly. You decide whether the engagement works for you.',
+    },
+    {
+        step: '03',
+        title: 'You work as a Mentor',
+        description:
+            'Guide them on a freelance basis, on your own terms and schedule. You are the expert — this is your time being paid for.',
     },
 ] as const
 
 export const HASHTAGS = [
     '#HelloWorld',
     '#RunningChores',
-    '#Mentoring',
+    '#Mentors',
+    '#Freelance',
     '#Consultation',
     '#EnterpriseSolutions',
     '#Hiring',
